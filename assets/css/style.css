@@ -88,3 +88,27 @@ body {
         width: 50%
     }
 }
+
+/*Styles for laptop/desktop*/
+@media screen and (min-width: 1280px){
+    .header {
+        height: 150px;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #header-img {
+        max-height: 150px;
+        display: inline-block;
+    }
+
+    #header-text {
+        display: inline-block;
+        font-size: 90px;
+    }
+
+    .background {
+        margin: 30px 35% 0 35%;
+        width: 25%
+    }
+}
