@@ -1,0 +1,15 @@
+/*Link to font used*/
+@import url('https://fonts.cdnfonts.com/css/ringbearer');
+
+/*General styles*/
+body {
+    font-family: "ringbearer", serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/middle-earth-map.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #cba97b;
+    height: 100vh;
+    background-position: center;
+}
