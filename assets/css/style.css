@@ -51,3 +51,28 @@ body {
     color: #D3D3D3;
     margin-top: 5%;
 }
+
+/*General styling for buttons*/
+.btn {
+    display: block;
+    height: 75px;
+    width: 100px;
+    margin: 15px auto 15px auto;
+    font-size: 20px;
+    font-family: "ringbearer", serif;
+    background-color: #CBA97B;
+    border-radius: 15px;
+    color: #1B1212;
+}
+
+/*Styling for quiz type buttons only*/
+.type-btn {
+    height: 100px;
+    font-size: 35px;
+}
+
+/*Styling for button hover*/
+.btn:hover {
+    background-color: #1B1212;
+    color: #CBA97B;
+}
