@@ -7,8 +7,19 @@ let quiz = document.getElementById("quiz");
 let question = document.getElementById("question");
 let answerButtons = document.getElementById("answers");
 let nextButton = document.getElementById("next");
+let loadPage = document.getElementById('body')
 
+hobbitButton.addEventListener("click", startQuiz);
+lotrButton.addEventListener("click", startQuiz);
+tropButton.addEventListener("click", startQuiz);
 
+let currentQuestionIndex = 0;
+
+function startQuiz() {
+    loadPage.classList.add("hide");
+    quiz.classList.remove("hide");
+    showQuestion();
+}
 
 /*Questions*/
 const hobbitQuestions = [
