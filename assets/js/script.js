@@ -4,14 +4,14 @@ const hobbitQuestions = [
     {question: "Which two dwarves were Thorin's nephews?",
         answers: [
             {text: "Balin and Dwalin", correct: false},
-            {text: "Oin and Oin," correct: false},
+            {text: "Oin and Oin", correct: false},
             {text: "Kili and Fili", correct: true},
             {text: "Dori and Nori", correct: true},
         ]
     },
     {
         question: "Question 2",
-        answers[ 
+        answers: [ 
             {text: "Answer1", correct: false},
             {text: "Answer2", correct: false},
             {text: "Answer3", correct: true},
@@ -20,7 +20,7 @@ const hobbitQuestions = [
     },
     {
         question: "Question 3",
-        answers[ 
+        answers: [ 
             {text: "Answer1", correct: false},
             {text: "Answer2", correct: false},
             {text: "Answer3", correct: true},
@@ -29,7 +29,7 @@ const hobbitQuestions = [
     },
     {
         question: "Question 4",
-        answers[ 
+        answers: [ 
             {text: "Answer1", correct: false},
             {text: "Answer2", correct: false},
             {text: "Answer3", correct: true},
@@ -38,7 +38,7 @@ const hobbitQuestions = [
     },
     {
         question: "Question 5",
-        answers[ 
+        answers: [ 
             {text: "Answer1", correct: false},
             {text: "Answer2", correct: false},
             {text: "Answer3", correct: true},
@@ -47,7 +47,7 @@ const hobbitQuestions = [
     },
     {
         question: "Question 6",
-        answers[ 
+        answers: [ 
             {text: "Answer1", correct: false},
             {text: "Answer2", correct: false},
             {text: "Answer3", correct: true},
@@ -56,7 +56,7 @@ const hobbitQuestions = [
     },
     {
         question: "Question 7",
-        answers[ 
+        answers: [ 
             {text: "Answer1", correct: false},
             {text: "Answer2", correct: false},
             {text: "Answer3", correct: true},
@@ -65,7 +65,7 @@ const hobbitQuestions = [
     },
     {
         question: "Question 8",
-        answers[ 
+        answers: [ 
             {text: "Answer1", correct: false},
             {text: "Answer2", correct: false},
             {text: "Answer3", correct: true},
@@ -74,7 +74,7 @@ const hobbitQuestions = [
     },
     {
         question: "Question 9",
-        answers[ 
+        answers: [ 
             {text: "Answer1", correct: false},
             {text: "Answer2", correct: false},
             {text: "Answer3", correct: true},
@@ -83,7 +83,7 @@ const hobbitQuestions = [
     },
     {
         question: "Question 10",
-        answers[ 
+        answers: [ 
             {text: "Answer1", correct: false},
             {text: "Answer2", correct: false},
             {text: "Answer3", correct: true},
