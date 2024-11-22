@@ -76,3 +76,15 @@ body {
     background-color: #1B1212;
     color: #CBA97B;
 }
+
+/*Styles for Tablet*/
+@media screen and (min-width: 768px) {
+    #header-text {
+        font-size: 40px;
+    }
+
+    .background {
+        margin: 115px 25% auto 25%;
+        width: 50%
+    }
+}
