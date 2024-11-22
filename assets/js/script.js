@@ -1,12 +1,21 @@
+/*Code to interact with the DOM*/
+let hobbitButton = document.getElementById("hobbit-btn");
+let lotrButton = document.getElementById("lotr-btn");
+let tropButton = document.getElementById("trop-btn");
+let rules = document.getElementById("rules");
+let quiz = document.getElementById("quiz");
+let question = document.getElementById("question");
+let answerButtons = document.getElementById("answers");
+let nextButton = document.getElementById("next");
 
-
+/*Questions*/
 const hobbitQuestions = [
     {question: "Which two dwarves were Thorin's nephews?",
         answers: [
             {text: "Balin and Dwalin", correct: false},
             {text: "Oin and Oin", correct: false},
             {text: "Kili and Fili", correct: true},
-            {text: "Dori and Nori", correct: true},
+            {text: "Dori and Nori", correct: false},
         ]
     },
     {
@@ -98,7 +107,7 @@ const lotrQuestions = [
             {text: "Ungoliant", correct: false},
             {text: "Faramir", correct: false},
             {text: "Shelob", correct: true},
-            {text: "Azog", correct: true},
+            {text: "Azog", correct: false},
         ]
     },
     {
