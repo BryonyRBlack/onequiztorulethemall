@@ -35,3 +35,19 @@ body {
     display: inline-block;
 }
 
+/*Styling to hide divs until required*/
+.hide {
+    display: none;
+}
+
+/*Styling to add transparent box for the questions to be displayed on*/
+.background {
+    text-align: center;
+    background-color: rgba(83, 63, 63, 0.56);
+    border-radius: 5%;
+    display: block;
+    width: 90%;
+    padding: 20px;
+    color: #D3D3D3;
+    margin-top: 5%;
+}
