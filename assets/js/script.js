@@ -8,6 +8,8 @@ let question = document.getElementById("question");
 let answerButtons = document.getElementById("answers");
 let nextButton = document.getElementById("next");
 
+
+
 /*Questions*/
 const hobbitQuestions = [
     {question: "Which two dwarves were Thorin's nephews?",
