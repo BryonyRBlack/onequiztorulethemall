@@ -9,7 +9,29 @@ body {
     background-image: url("../images/middle-earth-map.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #cba97b;
+    background-color: #CBA97B;
     height: 100vh;
     background-position: center;
 }
+
+/*Styling for the header at top of page*/
+.header {
+    min-width: 100%;
+    max-width: 100%;
+    background-color: #1B1212;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #CBA97B;
+    overflow: hidden;
+    height: 100px;
+    font-size: 11px;
+    padding-right: 5px;
+}
+
+#header-img {
+    max-height: 100px;
+    display: inline-block;
+}
+
