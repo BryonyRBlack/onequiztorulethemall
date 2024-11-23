@@ -29,6 +29,7 @@ function showQuestion() {
     let currentQuestion = hobbitQuestions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     question.innerHTML = questionNo + ". " + currentQuestion.question;
+    
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
@@ -46,6 +47,24 @@ function resetQuiz() {
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
+}
+
+function selectAnswer(event){
+    const selectedBtn = event.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect){
+        selectedBtn.classList.add("correct");
+        score++
+    }else{
+        selectedBtn.classList.add("incorrect");
+    }
+    Array.from(answer.Buttons.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    })
+    nextButton.style.display = "block";
 }
 
 /*Questions*/
