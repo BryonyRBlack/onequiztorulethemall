@@ -58,13 +58,35 @@ function selectAnswer(event){
     }else{
         selectedBtn.classList.add("incorrect");
     }
-    Array.from(answer.Buttons.children).forEach(button => {
+    Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
     })
     nextButton.style.display = "block";
+}
+
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < hobbitQuestions.length){
+        handleNextButton();
+    }else {
+        startQuiz();
+    }
+})
+
+function handleNextButton(){
+    currentQuestionIndex++;
+    if (currentQuestionIndex < hobbitQuestions.length){
+        showQuestion();
+    }else{
+        finalScore();
+    }
+}
+
+function finalScore() {
+    resetQuiz();
+    question.innerHTML = `You scored ${score}`;
 }
 
 /*Questions*/
