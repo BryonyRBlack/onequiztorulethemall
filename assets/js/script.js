@@ -37,21 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
 let currentQuestionIndex = 0;
 let score = 0;
 
-function startQuiz() {
+function showQuestion() {
     loadPage.classList.add("hide");
     quiz.classList.remove("hide");
-    currentQuestionIndex = 0;
-    score = 0;
-    showQuestion();
-}
-
-function showQuestion() {
     resetQuiz();
-    let currentQuestion = hobbitQuestions[currentQuestionIndex];
+    let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     question.innerHTML = questionNo + ". " + currentQuestion.question;
-    
-    currentQuestion.answers.forEach(answer => {
+        currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
