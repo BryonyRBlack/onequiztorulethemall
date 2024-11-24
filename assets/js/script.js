@@ -1,7 +1,10 @@
-/*Code to interact with the DOM*/
+/**
+ * Code to interact with the DOM
+ */
 let hobbitButton = document.getElementById("hobbit-btn");
 let lotrButton = document.getElementById("lotr-btn");
 let tropButton = document.getElementById("trop-btn");
+let buttons = document.getElementsByClassName("type-btn");
 let rules = document.getElementById("rules");
 let quiz = document.getElementById("quiz");
 let question = document.getElementById("question");
@@ -9,9 +12,27 @@ let answerButtons = document.getElementById("answers");
 let nextButton = document.getElementById("next");
 let loadPage = document.getElementById('body')
 
-hobbitButton.addEventListener("click", startQuiz);
-lotrButton.addEventListener("click", startQuiz);
-tropButton.addEventListener("click", startQuiz);
+
+/**
+ * Wait for the DOM to finish loading before running
+ * Add event to select the game difficulty settings
+ */
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("button");
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            const gameType = this.getAttribute("data-type");
+            if (gameType === "hobbit") {
+                questions = hobbitQuestions;
+            }else if (gameType === "lotr") {
+                questions = lotrQuestions;
+            }else if (gameType === "trop"){
+                questions = tropQuestions
+            }
+            showQuestion(gameType);
+        })
+    }
+})
 
 let currentQuestionIndex = 0;
 let score = 0;
