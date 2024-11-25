@@ -69,6 +69,7 @@ function selectAnswer(event){
     if (isCorrect){
         selectedBtn.classList.add("correct");
         score++
+        increaseScore();
     }else{
         selectedBtn.classList.add("incorrect");
     }
@@ -98,9 +99,15 @@ function handleNextButton(){
     }
 }
 
+function increaseScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+}
+
 function finalScore() {
     resetQuiz();
     question.innerHTML = `You scored ${score}`;
+    document.getElementById("score-area").classList.add("hide");
 }
 
 /*Questions*/
