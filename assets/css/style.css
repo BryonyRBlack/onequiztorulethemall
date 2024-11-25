@@ -72,9 +72,18 @@ body {
 }
 
 /*Styling for button hover*/
-.btn:hover {
+.btn:hover:not([disabled]) {
     background-color: #1B1212;
     color: #CBA97B;
+}
+
+/*Styling for button background colour based on if answer is correct or incorrect*/
+.correct {
+    background-color: #2E8B57;
+}
+
+.incorrect {
+    background-color: #C41E3A;
 }
 
 /*Styles for Tablet*/
