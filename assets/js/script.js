@@ -10,7 +10,9 @@ let quiz = document.getElementById("quiz");
 let question = document.getElementById("question");
 let answerButtons = document.getElementById("answers");
 let nextButton = document.getElementById("next");
-let loadPage = document.getElementById('body')
+let loadPage = document.getElementById('body');
+let returnSection = document.getElementById("return");
+let returnBtn = document.getElementById("return-btn");
 
 
 /**
@@ -108,6 +110,7 @@ function finalScore() {
     resetQuiz();
     question.innerHTML = `You scored ${score}`;
     document.getElementById("score-area").classList.add("hide");
+    returnSection.classList.remove("hide");
 }
 
 /*Questions*/
