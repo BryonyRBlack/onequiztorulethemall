@@ -118,90 +118,90 @@ const hobbitQuestions = [
     {question: "Which two dwarves were Thorin's nephews?",
         answers: [
             {text: "Balin and Dwalin", correct: false},
-            {text: "Oin and Oin", correct: false},
+            {text: "Oin and Gloin", correct: false},
             {text: "Kili and Fili", correct: true},
             {text: "Dori and Nori", correct: false},
         ]
     },
     {
-        question: "Question 2",
+        question: "What is the full name of The Hobbit?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "The Hobbit, a Bilbo Baggins Tale", correct: false},
+            {text: "The Hobbit, or There and Back Again", correct: true},
+            {text: "The Hobbit, An Unexpected Journey", correct: false},
+            {text: "The Hobbit, Journey to Lonely Mountain", correct: false},
         ]
     },
     {
-        question: "Question 3",
+        question: "Which film character did not exist in the novel?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Bombur", correct: false},
+            {text: "Beorn", correct: false},
+            {text: "Bain", correct: false},
+            {text: "Tauriel", correct: true},
         ]
     },
     {
-        question: "Question 4",
+        question: "Who eventually did kill Smaug",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Thorin", correct: false},
+            {text: "Bard", correct: true},
+            {text: "Bilbo", correct: false},
+            {text: "Gandolf", correct: false},
         ]
     },
     {
-        question: "Question 5",
+        question: "Which character from The Lord of the Rings trilogy, did not return in the The Hobbit movies?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Aragon", correct: true},
+            {text: "Legolas", correct: false},
+            {text: "Frodo", correct: false},
+            {text: "Galadrial", correct: false},
         ]
     },
     {
-        question: "Question 6",
+        question: "Which of these was not a member of Thorin's company?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Kili", correct: false},
+            {text: "Balin", correct: false},
+            {text: "Nori", correct: false},
+            {text: "Durin ", correct: true},
         ]
     },
     {
-        question: "Question 7",
+        question: "What was the name of the stone that Thorin wanted to retrive?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Arkenstone", correct: true},
+            {text: "Palantíri", correct: false},    
+            {text: "Elfstone", correct: false},
+            {text: "Master Stone of Osgiliath", correct: false},
         ]
     },
     {
-        question: "Question 8",
+        question: "What does Bilbo name his sword?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Orcrist", correct: false},
+            {text: "Glamdring", correct: false},
+            {text: "Narsil", correct: false},             
+            {text: "Sting", correct: true},
         ]
     },
     {
-        question: "Question 9",
+        question: "What is the name of Thorin's sister?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Disa", correct: false},
+            {text: "Hildr", correct: false},
+            {text: "Dis", correct: true},
+            {text: "Eir", correct: false},
         ]
     },
     {
-        question: "Question 10",
+        question: "What colour is Bilbo's handkerchief?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Brown", correct: false},
+            {text: "Green with blue dots", correct: true},
+            {text: "Blue and green stripes", correct: false},
+            {text: "Blue with yellow dots", correct: false},
         ]
     }
 ]
