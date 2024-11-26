@@ -216,84 +216,84 @@ const lotrQuestions = [
         ]
     },
     {
-        question: "Question 2",
+        question: "Which wizard was not involved in war against Sauron?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Gandolf", correct: false},
+            {text: "Pallando", correct: true},
+            {text: "Saruman", correct: false},
+            {text: "Radagast", correct: false},
         ]
     },
     {
-        question: "Question 3",
+        question: "Which actor can be seen breaking a toe?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Orlando Bloom", correct: false},
+            {text: "Sean Bean", correct: false},
+            {text: "Mirando Otto", correct: false},
+            {text: "Viggo Mortensen", correct: true},
         ]
     },
     {
-        question: "Question 4",
+        question: "What is the name of the pub that Frodo and friends visit?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "The Dancing Dragon", correct: false},
+            {text: "The Prancing Poney", correct: true},
+            {text: "The Hungry Horse", correct: false},
+            {text: "The Drowning Duck", correct: false},
         ]
     },
     {
-        question: "Question 5",
+        question: "How many rings did Sauron make?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "1", correct: false},
+            {text: "20", correct: true},
+            {text: "9", correct: false},
+            {text: "17", correct: false},
         ]
     },
     {
-        question: "Question 6",
+        question: "Who was the only cast member to meet J. R. Tolkein?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Christopher Lee", correct: true},
+            {text: "Ian Mkellen", correct: false},
+            {text: "Elijah Wood", correct: false},
+            {text: "Andy Serkis", correct: false},
         ]
     },
     {
-        question: "Question 7",
+        question: "In the book, who saved Frodo from the Nine?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Arwen", correct: false},
+            {text: "Glorfindel", correct: true},
+            {text: "Aragon", correct: false},
+            {text: "Merry", correct: false},
         ]
     },
     {
-        question: "Question 8",
+        question: "In the films, who arrived firsr for the council of Elrond?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Boromir", correct: true},
+            {text: "Legolas", correct: false},
+            {text: "Grimli", correct: false},
+            {text: "Gandalf", correct: false},
         ]
     },
     {
-        question: "Question 9",
+        question: "What is the name of the pony that joins the Fellowship?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Dapple", correct: false},
+            {text: "Asfaloth", correct: false},
+            {text: "Bill", correct: true},
+            {text: "Shadowfax", correct: false},
         ]
     },
     {
-        question: "Question 10",
+        question: "What birthday was Bilbo celebrating?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "100th", correct: false},
+            {text: "75th", correct: false},
+            {text: "99", correct: false},
+            {text: "111th", correct: true},
         ]
     }
 ]
