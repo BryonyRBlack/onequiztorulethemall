@@ -55,3 +55,14 @@ This was deployed to GitHub pages
 * Clicked onto the settings tab, and then onto Pages under Code and automation
 * Ensured Branch was set to Main, and saved
 * Located under Environments The deployed site can be located here: https://bryonyrblack.github.io/onequiztorulethemall/
+
+## Credits
+### Content
+* Instructions on how to make the loading page vanish, and the questions and answers appear was taken from [GreatStack's youtube tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1719s&ab_channel=GreatStack)
+* Instructions on how to make the "Play Again" button gunction came from [stackoverflow](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click)
+* Inspiration for the different quiz options came from the Love Maths project
+
+### Media
+* All the images used are from Google Images, with license set to Creative Commons licenses
+* The question content came from [The One Wiki to Rule Them All](https://lotr.fandom.com/wiki/Main_Page)
+* The font came from [CDN Fonts](https://www.cdnfonts.com/ringbearer.font)
