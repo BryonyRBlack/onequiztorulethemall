@@ -39,7 +39,7 @@ The colour scheme matches the landing page. The question is in a pale grey, with
 Once all questions have been answered, a page showing the final score and the option to play again is displayed. The font colour, and the styling matches the previous settings.
 
 ## Features left to implement
-In future updates, I would like to add more quiz options, such as The Simalarian, or The Unfinished Tales. I would also like to add a timer onto the questions, and a username section as I did not have time to complete this.
+In future updates, I would like to add more quiz options, such as The Simalarian, or The Unfinished Tales. I would also like to add a timer onto the questions, and a username section as I did not have time to complete this. I would also like to find a more accessable way to show the correct/incorrect answers.
 
 ## Testing
 I have run this on Google Chrome and Edge, and am satisfied this runs on both browers. I have tried this on different screen sizes in Goggle Developer Tools and happy this showed as expected. 
@@ -53,6 +53,13 @@ I have run this on Google Chrome and Edge, and am satisfied this runs on both br
   * Function with the largest signature take 1 arguments, while the median is 0.
   * Largest function has 9 statements in it, while the median is 4.
   * The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+
+## Pilot Testing
+After the quiz was set up, I sent this first to a friend who loves Lord of the Rings. She confirmed the answers were all correct, and that it was a good level of difficulty.
+I also sent this to Peer Review within the Code Instute Slack. The feedback I received was
+* The rules mentioned a timer, but that this was not visable. I have now removed this as I did not have time to implement. 
+* The "Next" button blended in. I have now changed this to be rounded so it looks different from the answer buttons.
+* The answers only changing colour was not very accessable. This is currently something I am looking into a way to fix.
 
 ## Deployment
 This was deployed to GitHub pages
