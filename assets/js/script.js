@@ -270,7 +270,7 @@ const lotrQuestions = [
         ]
     },
     {
-        question: "In the films, who arrived firsr for the council of Elrond?",
+        question: "In the films, who arrived first for the council of Elrond?",
         answers: [ 
             {text: "Boromir", correct: true},
             {text: "Legolas", correct: false},
@@ -299,93 +299,93 @@ const lotrQuestions = [
 ]
 
 const tropQuestions = [
-    {question: "What name has Charlie Vickers character not introduced himself as?",
+    {question: "What name did Charlie Vickers character first introduce himself with?",
         answers: [
-            {text: "Halbrand", correct: false},
+            {text: "Halbrand", correct: true},
             {text: "Annatar", correct: false},
-            {text: "Sauron", correct: true},
-            {text: "King of the Southlands", correct: false},
+            {text: "Sauron", correct: false},
+            {text: "Isildur", correct: false},
         ]
     },
     {
-        question: "Question 2",
+        question: "Míriel suffered with what after the eruption of Mount Doom?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Broken Arm", correct: false},
+            {text: "Blindness", correct: true},
+            {text: "Lost Leg", correct: false},
+            {text: "Stab Wound", correct: false},
         ]
     },
     {
-        question: "Question 3",
+        question: "Wich characters originally found the Stranger?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Nori and Poppy", correct: true},
+            {text: "Galdrial and Halbrand", correct: false},
+            {text: "Bronwyn and Arondir", correct: false},
+            {text: "Elrond and Durin IV", correct: false},
         ]
     },
     {
-        question: "Question 4",
+        question: "What is the opening line of episode 1?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "In a hole in the ground there lived a hobbit.", correct: false},
+            {text: "The world is changed.", correct: false},
+            {text: "Nothing is evil in the beginning.", correct: true},
+            {text: "There was Eru, the One, who in Arda is called Ilúvatar", correct: false},
         ]
     },
     {
-        question: "Question 5",
+        question: "When is Rings of Power set?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Fourth Age", correct: false},
+            {text: "Second Age", correct: true},
+            {text: "Third Age", correct: false},
+            {text: "First Age", correct: false},
         ]
     },
     {
-        question: "Question 6",
+        question: "The Southlands becomes what famous setting in The Lord of the Rings?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "The Shire", correct: false},
+            {text: "Rivendale", correct: false},
+            {text: "Gondor", correct: false},
+            {text: "Mordor", correct: true},
         ]
     },
     {
-        question: "Question 7",
+        question: "Which character does not appear in The Lord of the Rings?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Galdrial", correct: false},
+            {text: "Isildur", correct: false},
+            {text: "Gil-galad", correct: true},
+            {text: "The Stranger", correct: false},
         ]
     },
     {
-        question: "Question 8",
+        question: "What is the name of Galadrial's brother?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Arondir", correct: false},
+            {text: "Finrod", correct: true},
+            {text: "Celebrimbor", correct: false},
+            {text: "Eärien", correct: false},
         ]
     },
     {
-        question: "Question 9",
+        question: "What is Nori's surname?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "Baggins", correct: false},
+            {text: "Harfoot", correct: false},
+            {text: "Proudfellow", correct: false},
+            {text: "Brandyfoot", correct: true},
         ]
     },
     {
-        question: "Question 10",
+        question: "Who did Galadrial believe Halbrand to be?",
         answers: [ 
-            {text: "Answer1", correct: false},
-            {text: "Answer2", correct: false},
-            {text: "Answer3", correct: true},
-            {text: "Answer4", correct: false},
+            {text: "King of Numenor", correct: false},
+            {text: "King of Gondor", correct: false},
+            {text: "King of the Southlands", correct: true},
+            {text: "King under the Mountain", correct: false},
         ]
     }
 ]
