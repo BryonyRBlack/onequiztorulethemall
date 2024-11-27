@@ -33,3 +33,19 @@ The colour scheme matches the landing page. The question is in a pale grey, with
 
 ![Screenshot of ending page](/assets/images/quiz-end-for-readme.png)
 Once all questions have been answered, a page showing the final score and the option to play again is displayed. The font colour, and the styling matches the previous settings.
+
+## Features left to implement
+In future updates, I would like to add more quiz options, such as The Simalarian, or The Unfinished Tales. 
+
+## Testing
+I have run this on Google Chrome and Edge, and am satisfied this runs on both browers. I have tried this on different screen sizes in Goggle Developer Tools and happy this showed as expected. 
+
+## Validation
+* No HTML errors returned when passed through [validator.w3](https://validator.w3.org/nu/)
+* No CSS errors returned when passed through [Jigsaw](https://jigsaw.w3.org/css-validator/)
+* No JavaScript errors returned when passed through [JSHint](https://jshint.com/)
+  * The following metrics were returned:
+  * There are 11 functions in this file.
+  * Function with the largest signature take 1 arguments, while the median is 0.
+  * Largest function has 9 statements in it, while the median is 4.
+  * The most complex function has a cyclomatic complexity value of 4 while the median is 2.
