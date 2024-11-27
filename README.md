@@ -18,6 +18,10 @@ The primary user purpose for this website is a quiz that will test the knowledge
 This is to give a different experience for whichever topic the user feels more comfortable with.
 The quiz will show the number of correct scores throughout, as well as the amount the user got correct at the end of the quiz.
 
+## Planning
+![Image of the wireframe](/assets/images/wireframe%20for%20readme.png)
+The first thing I did was to create a wireframe of the finished project. I knew from the start I wanted to use the map as a background. I also knew that I wanted the three sections to be _The Hobbit_, _The Lord of the Rings_ and _Rings of Power_, rather than having traditional difficulty settings. Initially I did want to include a timer and a place to enter a username. 
+
 ## Features
 ![image of the header](/assets/images/header-img-for-readme.png)
 The header is on a plain bakcground, which matches the font later in the quiz. It contains the name of the quiz, and the Lord of the Rings logo from the films. The font used throughout the page is based on the Title font from the film franchise.
@@ -35,7 +39,7 @@ The colour scheme matches the landing page. The question is in a pale grey, with
 Once all questions have been answered, a page showing the final score and the option to play again is displayed. The font colour, and the styling matches the previous settings.
 
 ## Features left to implement
-In future updates, I would like to add more quiz options, such as The Simalarian, or The Unfinished Tales. 
+In future updates, I would like to add more quiz options, such as The Simalarian, or The Unfinished Tales. I would also like to add a timer onto the questions, and a username section as I did not have time to complete this.
 
 ## Testing
 I have run this on Google Chrome and Edge, and am satisfied this runs on both browers. I have tried this on different screen sizes in Goggle Developer Tools and happy this showed as expected. 
