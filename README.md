@@ -20,22 +20,28 @@ The quiz will show the number of correct scores throughout, as well as the amoun
 
 ## Planning
 ![Image of the wireframe](/assets/images/wireframe%20for%20readme.png)
+
 The first thing I did was to create a wireframe of the finished project. I knew from the start I wanted to use the map as a background. I also knew that I wanted the three sections to be _The Hobbit_, _The Lord of the Rings_ and _Rings of Power_, rather than having traditional difficulty settings. Initially I did want to include a timer and a place to enter a username. 
 
 ## Features
 ![image of the header](/assets/images/header-img-for-readme.png)
+
 The header is on a plain bakcground, which matches the font later in the quiz. It contains the name of the quiz, and the Lord of the Rings logo from the films. The font used throughout the page is based on the Title font from the film franchise.
 
 ![Small image of the map used as the background](/assets/images/small-image-of-lord-of-the-rings-map-for-readme.png)
+
 For the background, I used the map from the Lord of the Rings, which has familiar names for fans of the franchise. The colour then use in the heading, and the back of the buttons was found within in the map using [imagecoverpicker](https://imagecolorpicker.com/)
 
 ![Screenshot of the landing page showing the rules and quiz difficulty settings](/assets/images/landing-page-for-readme.png)
+
 When first opened, there is the rules section, and then the options for which questions the user wants to use. The rules are in paler colour to stand out. These buttons invert colours when highlighted so the user can see what they are hovering over. 
 
 ![Screenshot of the quiz page](/assets/images/quiz-for-readme.png)
+
 The colour scheme matches the landing page. The question is in a pale grey, with the buttons matching the quiz options setting. Once correct, if the answer is correct the background turns green. If the answer is incorrect, it turns red while the correct answer shows a green background. Once an answer has been selected, the next button becomes visable, which is rounded to stand out against them. Underneath the buttons, the currect score is shown.
 
 ![Screenshot of ending page](/assets/images/quiz-end-for-readme.png)
+
 Once all questions have been answered, a page showing the final score and the option to play again is displayed. The font colour, and the styling matches the previous settings.
 
 ## Features left to implement
