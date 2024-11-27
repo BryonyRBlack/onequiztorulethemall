@@ -49,3 +49,9 @@ I have run this on Google Chrome and Edge, and am satisfied this runs on both br
   * Function with the largest signature take 1 arguments, while the median is 0.
   * Largest function has 9 statements in it, while the median is 4.
   * The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+
+## Deployment
+This was deployed to GitHub pages
+* Clicked onto the settings tab, and then onto Pages under Code and automation
+* Ensured Branch was set to Main, and saved
+* Located under Environments The deployed site can be located here: https://bryonyrblack.github.io/onequiztorulethemall/
