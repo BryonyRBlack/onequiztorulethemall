@@ -174,7 +174,7 @@ const hobbitQuestions = [
         ]
     },
     {
-        question: "Which character from The Lord of the Rings trilogy, did not return in the The Hobbit movies?",
+        question: "Which character from The Lord of the Rings trilogy did not return in the The Hobbit movies?",
         answers: [ 
             {text: "Aragon", correct: true},
             {text: "Legolas", correct: false},
@@ -192,7 +192,7 @@ const hobbitQuestions = [
         ]
     },
     {
-        question: "What was the name of the stone that Thorin wanted to retrive?",
+        question: "What was the name of the stone that Thorin wanted to retrieve?",
         answers: [ 
             {text: "Arkenstone", correct: true},
             {text: "Palantíri", correct: false},    
@@ -263,7 +263,7 @@ const lotrQuestions = [
         question: "What is the name of the pub that Frodo and friends visit?",
         answers: [ 
             {text: "The Dancing Dragon", correct: false},
-            {text: "The Prancing Poney", correct: true},
+            {text: "The Prancing Pony", correct: true},
             {text: "The Hungry Horse", correct: false},
             {text: "The Drowning Duck", correct: false},
         ]
@@ -318,7 +318,7 @@ const lotrQuestions = [
         answers: [ 
             {text: "100th", correct: false},
             {text: "75th", correct: false},
-            {text: "99", correct: false},
+            {text: "99th", correct: false},
             {text: "111th", correct: true},
         ]
     }
@@ -328,7 +328,7 @@ const lotrQuestions = [
  * The Rings of Power questions for final difficulty
  */
 const tropQuestions = [
-    {question: "What name did Charlie Vickers character first introduce himself with?",
+    {question: "What name did Charlie Vickers' character first introduce himself with?",
         answers: [
             {text: "Halbrand", correct: true},
             {text: "Annatar", correct: false},
@@ -346,7 +346,7 @@ const tropQuestions = [
         ]
     },
     {
-        question: "Wich characters originally found the Stranger?",
+        question: "Which characters originally found the Stranger?",
         answers: [ 
             {text: "Nori and Poppy", correct: true},
             {text: "Galdrial and Halbrand", correct: false},
