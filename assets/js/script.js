@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
 let currentQuestionIndex = 0;
 let score = 0;
 
+/**
+ * This function first removes the difficulty setting page
+ * The function then shows the current question and answer options, reacting when an answer is selected
+ */
 function showQuestion() {
     loadPage.classList.add("hide");
     quiz.classList.remove("hide");
@@ -58,6 +62,9 @@ function showQuestion() {
     });
 }
 
+/**
+ *After the next button is clicked, this returns to quiz to the question
+ */
 function resetQuiz() {
     nextButton.style.display = "none";
     while (answerButtons.firstChild) {
@@ -65,6 +72,11 @@ function resetQuiz() {
     }
 }
 
+/**
+ *Function adds a class to the answer selected, so the css styling is applied
+ *Function increases score if correct
+ Next button is displayed
+ */
 function selectAnswer(event){
     const selectedBtn = event.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -84,6 +96,9 @@ function selectAnswer(event){
     nextButton.style.display = "block";
 }
 
+/**
+ * Code for the next button, on if another question should be shown or if final screen
+ */
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < hobbitQuestions.length){
         handleNextButton();
@@ -101,6 +116,9 @@ function handleNextButton(){
     }
 }
 
+/**
+ * Code for increasing the score
+ */
 function increaseScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
@@ -113,7 +131,12 @@ function finalScore() {
     returnSection.classList.remove("hide");
 }
 
-/*Questions*/
+/**
+ * Questions
+ * */
+/**
+ * Hobbit Questions for first difficulty
+ */
 const hobbitQuestions = [
     {question: "Which two dwarves were Thorin's nephews?",
         answers: [
@@ -206,6 +229,9 @@ const hobbitQuestions = [
     }
 ]
 
+/**
+ * Lord of the Rings questions for second difficulty
+ */
 const lotrQuestions = [
     {question: "What was the name of the Spider that Sam killed?",
         answers: [
@@ -298,6 +324,9 @@ const lotrQuestions = [
     }
 ]
 
+/**
+ * The Rings of Power questions for final difficulty
+ */
 const tropQuestions = [
     {question: "What name did Charlie Vickers character first introduce himself with?",
         answers: [
