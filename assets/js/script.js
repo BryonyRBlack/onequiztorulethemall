@@ -301,6 +301,7 @@ let questions = [];
 /**
  * Wait for the DOM to finish loading before running
  * Add event to select the game difficulty settings
+ * For insperation on how to do this, I used the Love Maths project
  */
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
@@ -325,6 +326,7 @@ let score = 0;
 /**
  * This function first removes the difficulty setting page
  * The function then shows the current question and answer options, reacting when an answer is selected
+ * For guidance on how to do this, I used GreatStack's youtube tutorial, found at https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1719s&ab_channel=GreatStack
  */
 function showQuestion() {
     loadPage.classList.add("hide");
@@ -359,6 +361,7 @@ function resetQuiz() {
  *Function adds a class to the answer selected, so the css styling is applied
  *Function increases score if correct
  Next button is displayed
+ For guidance on how to do this, I used GreatStack's youtube tutorial, found at https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1719s&ab_channel=GreatStack
  */
 function selectAnswer(event){
     const selectedBtn = event.target;
@@ -401,6 +404,7 @@ function handleNextButton(){
 
 /**
  * Code for increasing the score
+ * For guidance on how to do this, I used the Love Maths project
  */
 function increaseScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
