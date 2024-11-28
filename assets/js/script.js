@@ -1,137 +1,4 @@
 /**
- * Code to interact with the DOM
- */
-let hobbitButton = document.getElementById("hobbit-btn");
-let lotrButton = document.getElementById("lotr-btn");
-let tropButton = document.getElementById("trop-btn");
-let buttons = document.getElementsByClassName("type-btn");
-let rules = document.getElementById("rules");
-let quiz = document.getElementById("quiz");
-let question = document.getElementById("question");
-let answerButtons = document.getElementById("answers");
-let nextButton = document.getElementById("next");
-let loadPage = document.getElementById('body');
-let returnSection = document.getElementById("return");
-let returnBtn = document.getElementById("return-btn");
-
-
-/**
- * Wait for the DOM to finish loading before running
- * Add event to select the game difficulty settings
- */
-document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("button");
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            const gameType = this.getAttribute("data-type");
-            if (gameType === "hobbit") {
-                questions = hobbitQuestions;
-            }else if (gameType === "lotr") {
-                questions = lotrQuestions;
-            }else if (gameType === "trop"){
-                questions = tropQuestions
-            }
-            showQuestion(gameType);
-        })
-    }
-})
-
-let currentQuestionIndex = 0;
-let score = 0;
-
-/**
- * This function first removes the difficulty setting page
- * The function then shows the current question and answer options, reacting when an answer is selected
- */
-function showQuestion() {
-    loadPage.classList.add("hide");
-    quiz.classList.remove("hide");
-    resetQuiz();
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    question.innerHTML = questionNo + ". " + currentQuestion.question;
-        currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn");
-        answerButtons.appendChild(button);
-        if (answer.correct) {
-            button.dataset.correct = answer.correct;
-        }
-        button.addEventListener("click", selectAnswer);
-    });
-}
-
-/**
- *After the next button is clicked, this returns to quiz to the question
- */
-function resetQuiz() {
-    nextButton.style.display = "none";
-    while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild);
-    }
-}
-
-/**
- *Function adds a class to the answer selected, so the css styling is applied
- *Function increases score if correct
- Next button is displayed
- */
-function selectAnswer(event){
-    const selectedBtn = event.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
-    if (isCorrect){
-        selectedBtn.classList.add("correct");
-        score++
-        increaseScore();
-    }else{
-        selectedBtn.classList.add("incorrect");
-    }
-    Array.from(answerButtons.children).forEach(button => {
-        if (button.dataset.correct === "true") {
-            button.classList.add("correct");
-        }
-        button.disabled = true;
-    })
-    nextButton.style.display = "block";
-}
-
-/**
- * Code for the next button, on if another question should be shown or if final screen
- */
-nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < hobbitQuestions.length){
-        handleNextButton();
-    }else {
-        startQuiz();
-    }
-})
-
-function handleNextButton(){
-    currentQuestionIndex++;
-    if (currentQuestionIndex < hobbitQuestions.length){
-        showQuestion();
-    }else{
-        finalScore();
-    }
-}
-
-/**
- * Code for increasing the score
- */
-function increaseScore() {
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-}
-
-function finalScore() {
-    resetQuiz();
-    question.innerHTML = `You scored ${score}`;
-    document.getElementById("score-area").classList.add("hide");
-    returnSection.classList.remove("hide");
-}
-
-/**
  * Questions
  * */
 /**
@@ -418,3 +285,136 @@ const tropQuestions = [
         ]
     }
 ]
+
+/**
+ * Code to interact with the DOM
+ */
+let hobbitButton = document.getElementById("hobbit-btn");
+let lotrButton = document.getElementById("lotr-btn");
+let tropButton = document.getElementById("trop-btn");
+let buttons = document.getElementsByClassName("type-btn");
+let rules = document.getElementById("rules");
+let quiz = document.getElementById("quiz");
+let question = document.getElementById("question");
+let answerButtons = document.getElementById("answers");
+let nextButton = document.getElementById("next");
+let loadPage = document.getElementById('body');
+let returnSection = document.getElementById("return");
+let returnBtn = document.getElementById("return-btn");
+
+
+/**
+ * Wait for the DOM to finish loading before running
+ * Add event to select the game difficulty settings
+ */
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("button");
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            const gameType = this.getAttribute("data-type");
+            if (gameType === "hobbit") {
+                questions = hobbitQuestions;
+            }else if (gameType === "lotr") {
+                questions = lotrQuestions;
+            }else if (gameType === "trop"){
+                questions = tropQuestions
+            }
+            showQuestion(gameType);
+        })
+    }
+})
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+/**
+ * This function first removes the difficulty setting page
+ * The function then shows the current question and answer options, reacting when an answer is selected
+ */
+function showQuestion() {
+    loadPage.classList.add("hide");
+    quiz.classList.remove("hide");
+    resetQuiz();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    question.innerHTML = questionNo + ". " + currentQuestion.question;
+        currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
+}
+
+/**
+ *After the next button is clicked, this returns to quiz to the question
+ */
+function resetQuiz() {
+    nextButton.style.display = "none";
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
+
+/**
+ *Function adds a class to the answer selected, so the css styling is applied
+ *Function increases score if correct
+ Next button is displayed
+ */
+function selectAnswer(event){
+    const selectedBtn = event.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect){
+        selectedBtn.classList.add("correct");
+        score++
+        increaseScore();
+    }else{
+        selectedBtn.classList.add("incorrect");
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    })
+    nextButton.style.display = "block";
+}
+
+/**
+ * Code for the next button, on if another question should be shown or if final screen
+ */
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < hobbitQuestions.length){
+        handleNextButton();
+    }else {
+        startQuiz();
+    }
+})
+
+function handleNextButton(){
+    currentQuestionIndex++;
+    if (currentQuestionIndex < hobbitQuestions.length){
+        showQuestion();
+    }else{
+        finalScore();
+    }
+}
+
+/**
+ * Code for increasing the score
+ */
+function increaseScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+}
+
+function finalScore() {
+    resetQuiz();
+    question.innerHTML = `You scored ${score}`;
+    document.getElementById("score-area").classList.add("hide");
+    returnSection.classList.remove("hide");
+}
