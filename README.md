@@ -38,7 +38,7 @@ When first opened, there is the rules section, and then the options for which qu
 
 ![Screenshot of the quiz page](/assets/images/quiz-for-readme.png)
 
-The colour scheme matches the landing page. The question is in a pale grey, with the buttons matching the quiz options setting. Once correct, if the answer is correct the background turns green. If the answer is incorrect, it turns red while the correct answer shows a green background. Once an answer has been selected, the next button becomes visable, which is rounded to stand out against them. Underneath the buttons, the currect score is shown.
+The colour scheme matches the landing page. The question is in a pale grey, with the buttons matching the quiz options setting. Once correct, if the answer is correct the background turns green. If the answer is incorrect, it turns red while the correct answer shows a green background. Once an answer has been selected, the next button becomes visable, which is rounded to stand out against them. Underneath the buttons, the currect score is shown. Once clicked, the answer buttons then become disabled, this prevents any error messages coming up as well as preventing the user from changing their answer.
 
 ![Screenshot of ending page](/assets/images/quiz-end-for-readme.png)
 
