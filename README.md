@@ -61,11 +61,17 @@ Originally the following warnings were found:
   * Six unused variables
 As such, I have added the semicolons. I have moved the question section to the top of the script.js. I have added a let varaible for _questions_, and removed startQuiz from the code. I have removed the unusued variables.
 
-  * The following metrics were returned:
+After this, the following metrics were returned:
   * There are 11 functions in this file.
   * Function with the largest signature take 1 arguments, while the median is 0.
   * Largest function has 9 statements in it, while the median is 4.
   * The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+
+In addition, this warning was now present:
+
+304	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (questions, showQuestion).
+
+I have reviewed this, and and as this is a warning not an error I have had to ignore this to ensure that the quiz still runs as intended.
 
 ### Pilot Testing
 After the quiz was set up, I sent this first to a friend who loves Lord of the Rings. She confirmed the answers were all correct, and that it was a good level of difficulty.

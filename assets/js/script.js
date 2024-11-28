@@ -94,7 +94,7 @@ const hobbitQuestions = [
             {text: "Blue with yellow dots", correct: false},
         ]
     }
-]
+];
 
 /**
  * Lord of the Rings questions for second difficulty
@@ -189,7 +189,7 @@ const lotrQuestions = [
             {text: "111th", correct: true},
         ]
     }
-]
+];
 
 /**
  * The Rings of Power questions for final difficulty
@@ -284,7 +284,7 @@ const tropQuestions = [
             {text: "King under the Mountain", correct: false},
         ]
     }
-]
+];
 
 /**
  * Code to interact with the DOM
@@ -312,12 +312,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }else if (gameType === "lotr") {
                 questions = lotrQuestions;
             }else if (gameType === "trop"){
-                questions = tropQuestions
+                questions = tropQuestions;
             }
             showQuestion(gameType);
-        })
+        });
     }
-})
+});
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -365,7 +365,7 @@ function selectAnswer(event){
     const isCorrect = selectedBtn.dataset.correct === "true";
     if (isCorrect){
         selectedBtn.classList.add("correct");
-        score++
+        score++;
         increaseScore();
     }else{
         selectedBtn.classList.add("incorrect");
@@ -375,7 +375,7 @@ function selectAnswer(event){
             button.classList.add("correct");
         }
         button.disabled = true;
-    })
+    });
     nextButton.style.display = "block";
 }
 
@@ -388,7 +388,7 @@ nextButton.addEventListener("click", () => {
     }else {
         showQuestion();
     }
-})
+});
 
 function handleNextButton(){
     currentQuestionIndex++;
