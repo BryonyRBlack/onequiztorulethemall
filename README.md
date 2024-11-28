@@ -73,6 +73,11 @@ In addition, this warning was now present:
 
 I have reviewed this, and and as this is a warning not an error I have had to ignore this to ensure that the quiz still runs as intended.
 
+### Lighthouse
+![Screenshot of lighthouse report](/assets/images/lighthouse.png)
+
+Lighthouse report generated, confirms 100% accessibility. 
+
 ### Pilot Testing
 After the quiz was set up, I sent this first to a friend who loves Lord of the Rings. She confirmed the answers were all correct, and that it was a good level of difficulty.
 I also sent this to Peer Review within the Code Instute Slack. The feedback I received was
