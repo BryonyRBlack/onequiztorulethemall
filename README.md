@@ -50,7 +50,7 @@ In future updates, I would like to add more quiz options, such as The Simalarian
 ## Testing
 I have run this on Google Chrome and Edge, and am satisfied this runs on both browers. I have tried this on different screen sizes in Goggle Developer Tools and happy this showed as expected. 
 
-## Validation
+### Validation
 * No HTML errors returned when passed through [validator.w3](https://validator.w3.org/nu/)
 * No CSS errors returned when passed through [Jigsaw](https://jigsaw.w3.org/css-validator/)
 * No JavaScript errors returned when passed through [JSHint](https://jshint.com/)
@@ -60,21 +60,21 @@ I have run this on Google Chrome and Edge, and am satisfied this runs on both br
   * Largest function has 9 statements in it, while the median is 4.
   * The most complex function has a cyclomatic complexity value of 4 while the median is 2.
 
-## Pilot Testing
+### Pilot Testing
 After the quiz was set up, I sent this first to a friend who loves Lord of the Rings. She confirmed the answers were all correct, and that it was a good level of difficulty.
 I also sent this to Peer Review within the Code Instute Slack. The feedback I received was
 * The rules mentioned a timer, but that this was not visable. I have now removed this as I did not have time to implement. 
 * The "Next" button blended in. I have now changed this to be rounded so it looks different from the answer buttons.
 * The answers only changing colour was not very accessable. This is currently something I am looking into a way to fix.
 
-## Deployment
+### Deployment
 This was deployed to GitHub pages
 * Clicked onto the settings tab, and then onto Pages under Code and automation
 * Ensured Branch was set to Main, and saved
 * Located under Environments The deployed site can be located here: https://bryonyrblack.github.io/onequiztorulethemall/
 
 ## Credits
-### Content
+### Code
 * Instructions on how to make the loading page vanish, and the questions and answers appear was taken from [GreatStack's youtube tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1719s&ab_channel=GreatStack)
 * Instructions on how to make the "Play Again" button gunction came from [stackoverflow](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click)
 * Inspiration for the different quiz options came from the Love Maths project
