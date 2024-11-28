@@ -301,6 +301,7 @@ let nextButton = document.getElementById("next");
 let loadPage = document.getElementById('body');
 let returnSection = document.getElementById("return");
 let returnBtn = document.getElementById("return-btn");
+let questions = [];
 
 
 /**

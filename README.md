@@ -54,6 +54,13 @@ I have run this on Google Chrome and Edge, and am satisfied this runs on both br
 * No HTML errors returned when passed through [validator.w3](https://validator.w3.org/nu/)
 * No CSS errors returned when passed through [Jigsaw](https://jigsaw.w3.org/css-validator/)
 * No JavaScript errors returned when passed through [JSHint](https://jshint.com/)
+Originally the following warnings were found:
+  * Missing semicolon.
+  * 315	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (questions, showQuestion)
+  * Two undefined variables - _questions_ and _startQuiz_
+  * Six unused variables
+As such, I have added the semicolons. I have moved the question section to the top of the script.js. I have added a let varaible for _questions_, and removed startQuiz from the code. I have removed the unusued variables.
+
   * The following metrics were returned:
   * There are 11 functions in this file.
   * Function with the largest signature take 1 arguments, while the median is 0.
