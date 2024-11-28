@@ -11,6 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon/favicon-32x32.png">
 </head>
 <body>
+<!--Header at the top of the page containing an image and text-->
     <header>
         <div class="header">
             <img id="header-img" src="assets/images/lord-of-the-rings-logo.png" alt="The Lord of the Rings logo">
@@ -19,18 +20,21 @@
     </header>
     <div class="background">
         <div id="body">
+            <!--The rules of the game which are displayed when the page loads-->
             <div id="rules">
                 <p>The Rules
                     <br>Pick which subject you wish to answer
                     <br>You will have four choices
                 </p>
             </div>
+            <!--Settings for which set of questions the user wishes to answer-->
             <div id="difficulty">
                 <button class="btn type-btn" id="hobbit-btn" data-type = "hobbit">The Hobbit</button>
                 <button class="btn type-btn" id="lotr-btn" data-type="lotr">The Lord of the Rings</button>
                 <button class="btn type-btn" id="trop-btn" data-type="trop">The Rings of Power</button>
             </div>
         </div>
+        <!--Area where the quiz will be displayed, including question, answer, score, and next button-->
         <div class="hide" id="quiz">
             <p class="question" id="question"></p>
             <div id="answers">
@@ -43,11 +47,13 @@
             <div id="score-area">
                 <p class="score">Current Score: <span id="score">0</span></p>
             </div>
+            <!--Play Again button when the quiz has completed-->
             <div class="return hide" id="return">
                 <button class="btn" id="return-btn" onClick="window.location.reload();">Play Again?</button>
             </div>
         </div>
     </div>
+    <!--Link to the javascript file-->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
