@@ -289,18 +289,12 @@ const tropQuestions = [
 /**
  * Code to interact with the DOM
  */
-let hobbitButton = document.getElementById("hobbit-btn");
-let lotrButton = document.getElementById("lotr-btn");
-let tropButton = document.getElementById("trop-btn");
-let buttons = document.getElementsByClassName("type-btn");
-let rules = document.getElementById("rules");
 let quiz = document.getElementById("quiz");
 let question = document.getElementById("question");
 let answerButtons = document.getElementById("answers");
 let nextButton = document.getElementById("next");
 let loadPage = document.getElementById('body');
 let returnSection = document.getElementById("return");
-let returnBtn = document.getElementById("return-btn");
 let questions = [];
 
 
@@ -392,7 +386,7 @@ nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < hobbitQuestions.length){
         handleNextButton();
     }else {
-        startQuiz();
+        showQuestion();
     }
 })
 
