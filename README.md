@@ -19,7 +19,7 @@ This is to give a different experience for whichever topic the user feels more c
 The quiz will show the number of correct scores throughout, as well as the amount the user got correct at the end of the quiz.
 
 ## Planning
-![Image of the wireframe](/assets/images/wireframe%20for%20readme.png)
+![Image of the wireframe](/assets/images/wireframe-for-readme.png)
 
 The first thing I did was to create a wireframe of the finished project. I knew from the start I wanted to use the map as a background. I also knew that I wanted the three sections to be _The Hobbit_, _The Lord of the Rings_ and _Rings of Power_, rather than having traditional difficulty settings. Initially I did want to include a timer and a place to enter a username. 
 
