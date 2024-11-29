@@ -71,7 +71,7 @@ In addition, this warning was now present:
 
 304	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (questions, showQuestion).
 
-I have reviewed this, and and as this is a warning not an error I have had to ignore this to ensure that the quiz still runs as intended.
+I have reviewed this, and and as this is a warning not an error I have had to ignore this to ensure that the quiz still runs as intended. The fix for _questions_ would be to place this as a const variable, however as I need the value of this to change within the if/else loop this has to remain a let variable. Similarly the function has to be named within the loop, to ensure the game runs as intended.
 
 ### Lighthouse
 ![Screenshot of lighthouse report](/assets/images/lighthouse.png)
