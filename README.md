@@ -45,7 +45,7 @@ The colour scheme matches the landing page. The question is in a pale grey, with
 Once all questions have been answered, a page showing the final score and the option to play again is displayed. The font colour, and the styling matches the previous settings.
 
 ## Features left to implement
-In future updates, I would like to add more quiz options, such as The Simalarian, or The Unfinished Tales. I would also like to add a timer onto the questions, and a username section as I did not have time to complete this. I would also like to find a more accessable way to show the correct/incorrect answers.
+In future updates, I would like to add more quiz options, such as The Simalarian, or The Unfinished Tales. I would also like to add a timer onto the questions, and a username section as I did not have time to complete this. I would also like to find a more accessable way to show the correct/incorrect answers, currently the score does increase if correct for a screen reader to pick up.
 
 ## Testing
 I have run this on Google Chrome and Edge, and am satisfied this runs on both browers. I have tried this on different screen sizes in Goggle Developer Tools and happy this showed as expected. 
